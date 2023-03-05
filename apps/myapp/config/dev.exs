@@ -25,7 +25,7 @@ config :myapp, MyappWeb.Endpoint,
   debug_errors: true,
   secret_key_base: "MSLgbL3IsSkfZURbwcCr+puxIR2WAFsccmWzpAIPuspcRJfPPc4a3D6Er9Ejsix/",
   watchers: [
-    esbuild: {Esbuild, :install_and_run, [:default, ~w(--sourcemap=inline --watch)]},
+    node: ["esbuild.js", "--watch", cd: Path.expand("../assets", __DIR__)],
     tailwind: {Tailwind, :install_and_run, [:default, ~w(--watch)]}
   ]
 
@@ -56,9 +56,9 @@ config :myapp, MyappWeb.Endpoint,
 config :myapp, MyappWeb.Endpoint,
   live_reload: [
     patterns: [
-      ~r"priv/static/.*(js|css|png|jpeg|jpg|gif|svg)$",
-      ~r"priv/gettext/.*(po)$",
-      ~r"lib/myapp_web/(controllers|live|components)/.*(ex|heex)$"
+      ~r"app/myapp/priv/static/.*(js|css|png|jpeg|jpg|gif|svg)$",
+      ~r"app/myapp/priv/gettext/.*(po)$",
+      ~r"app/myapp/lib/myapp_web/(controllers|live|components)/.*(ex|heex)$"
     ]
   ]
 
