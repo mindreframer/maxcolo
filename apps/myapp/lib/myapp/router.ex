@@ -1,4 +1,4 @@
-defmodule MyappWeb.Router do
+defmodule Myapp.Router do
   use MyappWeb, :router
 
   pipeline :browser do

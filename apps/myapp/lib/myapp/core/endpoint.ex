@@ -47,5 +47,5 @@ defmodule MyappWeb.Endpoint do
   plug Plug.MethodOverride
   plug Plug.Head
   plug Plug.Session, @session_options
-  plug MyappWeb.Router
+  plug Myapp.Router
 end

@@ -99,7 +99,7 @@ defmodule MyappWeb do
     quote do
       use Phoenix.VerifiedRoutes,
         endpoint: MyappWeb.Endpoint,
-        router: MyappWeb.Router,
+        router: Myapp.Router,
         statics: MyappWeb.static_paths()
     end
   end
