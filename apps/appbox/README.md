@@ -12,3 +12,8 @@
 - give high level overview about the application
   - stats
   -
+
+Watch migrations folders
+
+- https://github.com/falood/file_system
+- on changes copy migration over

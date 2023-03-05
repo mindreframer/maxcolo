@@ -7,6 +7,14 @@
 # General application configuration
 import Config
 
+appbox_appfolder = Path.join(__DIR__, "..") |> Path.expand()
+appbox_privfolder = Path.join(appbox_appfolder, "priv")
+
+config :appbox,
+  app: :myapp,
+  appfolder: appbox_appfolder,
+  priv_folder: appbox_privfolder
+
 config :myapp,
   ecto_repos: [Myapp.Repo]
 
