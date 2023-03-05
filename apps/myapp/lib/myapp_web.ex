@@ -40,10 +40,10 @@ defmodule MyappWeb do
     quote do
       use Phoenix.Controller,
         formats: [:html, :json],
-        layouts: [html: MyappWeb.Layouts]
+        layouts: [html: Myapp.Layouts]
 
       import Plug.Conn
-      import MyappWeb.Gettext
+      import Myapp.Gettext
 
       unquote(verified_routes())
     end
@@ -52,7 +52,7 @@ defmodule MyappWeb do
   def live_view do
     quote do
       use Phoenix.LiveView,
-        layout: {MyappWeb.Layouts, :app}
+        layout: {Myapp.Layouts, :app}
 
       unquote(html_helpers())
     end
@@ -84,8 +84,8 @@ defmodule MyappWeb do
       # HTML escaping functionality
       import Phoenix.HTML
       # Core UI components and translation
-      import MyappWeb.CoreComponents
-      import MyappWeb.Gettext
+      import Myapp.CoreComponents
+      import Myapp.Gettext
 
       # Shortcut for generating JS commands
       alias Phoenix.LiveView.JS
@@ -98,7 +98,7 @@ defmodule MyappWeb do
   def verified_routes do
     quote do
       use Phoenix.VerifiedRoutes,
-        endpoint: MyappWeb.Endpoint,
+        endpoint: Myapp.Endpoint,
         router: Myapp.Router,
         statics: MyappWeb.static_paths()
     end

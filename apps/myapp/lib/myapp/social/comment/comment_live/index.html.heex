@@ -38,7 +38,7 @@
   on_cancel={JS.navigate(~p"/comments")}
 >
   <.live_component
-    module={MyappWeb.CommentLive.FormComponent}
+    module={Myapp.CommentLive.FormComponent}
     id={@comment.id || :new}
     title={@page_title}
     action={@live_action}

@@ -20,7 +20,7 @@ defmodule MyappWeb.ConnCase do
   using do
     quote do
       # The default endpoint for testing
-      @endpoint MyappWeb.Endpoint
+      @endpoint Myapp.Endpoint
 
       use MyappWeb, :verified_routes
 

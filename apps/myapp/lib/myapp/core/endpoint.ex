@@ -1,4 +1,4 @@
-defmodule MyappWeb.Endpoint do
+defmodule Myapp.Endpoint do
   use Phoenix.Endpoint, otp_app: :myapp
 
   # The session will be stored in the cookie and signed,

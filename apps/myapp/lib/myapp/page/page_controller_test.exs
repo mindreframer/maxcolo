@@ -1,4 +1,4 @@
-defmodule MyappWeb.PageControllerTest do
+defmodule Myapp.PageControllerTest do
   use MyappWeb.ConnCase
 
   test "GET /", %{conn: conn} do

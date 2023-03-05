@@ -1,4 +1,4 @@
-defmodule MyappWeb.CommentLive.Index do
+defmodule Myapp.CommentLive.Index do
   use MyappWeb, :live_view
 
   alias Myapp.Social
@@ -33,7 +33,7 @@ defmodule MyappWeb.CommentLive.Index do
   end
 
   @impl true
-  def handle_info({MyappWeb.CommentLive.FormComponent, {:saved, comment}}, socket) do
+  def handle_info({Myapp.CommentLive.FormComponent, {:saved, comment}}, socket) do
     {:noreply, stream_insert(socket, :comments, comment)}
   end
 

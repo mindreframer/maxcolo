@@ -1,4 +1,4 @@
-defmodule MyappWeb.CommentLive.Show do
+defmodule Myapp.CommentLive.Show do
   use MyappWeb, :live_view
 
   alias Myapp.Social

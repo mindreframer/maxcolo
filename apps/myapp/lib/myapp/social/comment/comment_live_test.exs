@@ -1,11 +1,19 @@
-defmodule MyappWeb.CommentLiveTest do
+defmodule Myapp.CommentLiveTest do
   use MyappWeb.ConnCase
 
   import Phoenix.LiveViewTest
   import Myapp.SocialFixtures
 
-  @create_attrs %{body: "some body", commenentable_id: 42, commentable_type: "some commentable_type"}
-  @update_attrs %{body: "some updated body", commenentable_id: 43, commentable_type: "some updated commentable_type"}
+  @create_attrs %{
+    body: "some body",
+    commenentable_id: 42,
+    commentable_type: "some commentable_type"
+  }
+  @update_attrs %{
+    body: "some updated body",
+    commenentable_id: 43,
+    commentable_type: "some updated commentable_type"
+  }
   @invalid_attrs %{body: nil, commenentable_id: nil, commentable_type: nil}
 
   defp create_comment(_) do

@@ -17,7 +17,7 @@ defmodule Myapp.Application do
       # Start Finch
       {Finch, name: Myapp.Finch},
       # Start the Endpoint (http/https)
-      MyappWeb.Endpoint
+      Myapp.Endpoint
       # Start a worker by calling: Myapp.Worker.start_link(arg)
       # {Myapp.Worker, arg}
     ]
@@ -32,7 +32,7 @@ defmodule Myapp.Application do
   # whenever the application is updated.
   @impl true
   def config_change(changed, _new, removed) do
-    MyappWeb.Endpoint.config_change(changed, removed)
+    Myapp.Endpoint.config_change(changed, removed)
     :ok
   end
 end

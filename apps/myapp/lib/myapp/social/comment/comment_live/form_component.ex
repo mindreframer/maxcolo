@@ -1,4 +1,4 @@
-defmodule MyappWeb.CommentLive.FormComponent do
+defmodule Myapp.CommentLive.FormComponent do
   use MyappWeb, :live_component
 
   alias Myapp.Social

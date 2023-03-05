@@ -1,4 +1,4 @@
-defmodule MyappWeb.PageController do
+defmodule Myapp.PageController do
   use MyappWeb, :controller
 
   def home(conn, _params) do

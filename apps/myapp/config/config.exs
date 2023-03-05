@@ -19,7 +19,7 @@ config :myapp,
   ecto_repos: [Myapp.Repo]
 
 # Configures the endpoint
-config :myapp, MyappWeb.Endpoint,
+config :myapp, Myapp.Endpoint,
   url: [host: "localhost"],
   render_errors: [
     formats: [html: MyappWeb.ErrorHTML, json: MyappWeb.ErrorJSON],
